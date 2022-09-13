@@ -1,12 +1,12 @@
 @font-face {
-    font-family: roboto;
-    src: url(/fonts/Roboto-Regular.ttf) format("ttf");
+    font-family: 'roboto';
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 }
 
 body{
     padding: 30px;
     background-color: #EFFFC8;
-    font-family: roboto;
+    font-family: 'Roboto', sans-serif;
     font-size: 100%;
 }
 
@@ -90,5 +90,5 @@ img{
     align-items: center;
     justify-content: center;
     margin-top: 40px;
-    font-family: roboto;
+    font-family: 'Roboto', sans-serif;
 }
