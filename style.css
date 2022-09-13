@@ -1,7 +1,13 @@
+@font-face {
+    font-family: roboto;
+    src: url(./fonts/Roboto-Regular.ttf);
+}
+
 body{
     padding: 30px;
     background-color: #EFFFC8;
-    font-family: monospace;
+    font-family: roboto;
+    font-size: 100%;
 }
 
 img{
@@ -16,14 +22,9 @@ img{
 .header{
     background-color: #85CB33;
     border-radius: 15px;
-    padding: 5px;
+    padding: 7px;
     display: flex;
     align-items: center;
-}
-
-.nav__list{
-    display: flex;
-    margin-top: 25px;
 }
 
 .logo__img{
@@ -32,9 +33,30 @@ img{
     filter: drop-shadow(5px 5px 3px grey);
 }
 
+.nav__list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
 .nav__list li{
+    float: left;
     list-style:none;
     margin: 0 0 0 40px;
+}
+
+.nav__list__text{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav__list__text:hover{
+    border-radius: 15px;
+    background-color: #558321;
 }
 
 .container{
@@ -44,6 +66,10 @@ img{
 
 .title{
     color: #85CB33;
+}
+
+.text{
+    font-size: 110%;
 }
 
 .gallery-item{
