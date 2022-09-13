@@ -1,6 +1,6 @@
 @font-face {
     font-family: roboto;
-    src: url(./fonts/Roboto-Regular.ttf);
+    src: url(/fonts/Roboto-Regular.ttf) format("ttf");
 }
 
 body{
@@ -90,5 +90,5 @@ img{
     align-items: center;
     justify-content: center;
     margin-top: 40px;
-    font-family: monospace;
+    font-family: roboto;
 }
