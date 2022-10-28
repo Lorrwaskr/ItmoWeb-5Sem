@@ -21,10 +21,13 @@ img{
 
 .header{
     background-color: #85CB33;
-    border-radius: 15px;
     padding: 7px;
     display: flex;
     align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
 }
 
 .logo__img{
@@ -59,8 +62,12 @@ img{
     background-color: #558321;
 }
 
+.about{
+    margin-top: 50px;
+}
+
 .container{
-    max-width: 1140px;
+    max-width: 1170px;
     margin: 0 auto;
 }
 
@@ -75,13 +82,13 @@ img{
 .gallery-item{
     display: flex;
     flex-wrap: wrap;
-    margin-left: 50px;
+    justify-content: center;
 }
 
 .item__photo{
-    width: 500px;
-    height: 330px;
-    margin: 0 20px 20px 0;
+    margin: 0 10px 10px 0;
+    max-width: 550px;
+    max-height: 370px;
 }
 
 .footer-content{
@@ -91,4 +98,75 @@ img{
     justify-content: center;
     margin-top: 40px;
     font-family: 'Roboto', sans-serif;
+}
+
+.gridbody{
+    display: grid;
+    grid-template-columns:33% 33% 33%; 
+}
+
+.griditem{
+    text-align: center;
+    border: 2px solid #000000;
+    padding: 30px;
+}
+
+.griditem:nth-child(6n-5), .griditem:nth-child(6n-4), .griditem:nth-child(6n-3){
+    background-color: #d9d9d9;
+    color: black;
+}
+
+.griditem:nth-child(1), .griditem:nth-child(2), .griditem:nth-child(3){
+    background-color: #5b6f7d;
+    color: black;
+}
+
+.griditem:nth-child(6n-2), .griditem:nth-child(6n-1), .griditem:nth-child(6n){
+    background-color: #c0c0c0;
+    color: black;
+} 
+
+@media screen and (max-width: 1200px){
+    .container{
+        max-width: 1170px;
+    }
+}
+
+@media screen and (max-width: 1199px){
+    .container{
+        max-width: 960px;
+    }
+    .gallery-item:nth-child(even){
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .container{
+        max-width: 720px;
+    }
+
+    .header{
+        visibility: hidden;
+    }
+
+    .about{
+        margin-top: 0;
+    }
+
+    body{
+        padding-top: 10px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .container{
+        max-width: 540px;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .container{
+        max-width: 100%;
+    }
 }
