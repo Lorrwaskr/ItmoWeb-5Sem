@@ -1,5 +1,5 @@
 # Shrek's fan page
-![ShrekPhoto](img/shrek_full_face.jpg "Shrek Photo")
+![ShrekPhoto](dist/img/shrek_full_face.jpg "Shrek Photo")
 
 ## Description
 This is a page dedicated to Dreamworks Animation's cartoon character **Shrek**.
