@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/head.html',{
+        "title": "Фильмография"
+    })
+    <body>
+        <div class="container">
+            @@include('html/header.html', {
+                "nav":{
+                    "filmography": "nav-active",
+                }
+            })
+
+            <main>
+                <section class="filmography">
+                    <h2 class="title">Фильмография</h2>
+                    <ul>
+                        <li>«Шрек»</li>
+                        <li>«Шрек 2»</li>
+                        <li>«Шрек Третий»</li>
+                        <li>«Шрек навсегда»</li>
+                        <li>«Кот в сапогах»</li>
+                    </ul>
+                </section>
+            </main>
+
+            @@include('html/footer.html', {})
+        </div>
+    </body>
+</html>

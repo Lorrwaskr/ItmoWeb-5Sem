@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/head.html',{
+        "title": "Цитаты Великого"
+    })
+    <body>
+        <div class="container">
+            @@include('html/header.html', {
+                "nav":{
+                    "quotes": "nav-active",
+                }
+            })
+
+            <main>
+                <section class="slogans">
+                    <h2 class="title">Известные цитаты</h2>
+                    <div class="text">
+                        <blockquote>"Не будьте как дома, вам тут официально не рады. Это факт."</blockquote>
+                        <blockquote>"— Фу, ну и чудище!
+                            <br>— Не очень-то вежливо! Нормальный ослик."
+                        </blockquote>
+                        <blockquote>"— Мы уже приехали?"</blockquote>
+                    </div>
+                </section>
+            </main>
+
+            @@include('html/footer.html', {})
+        </div>
+    </body>
+</html>

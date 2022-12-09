@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+* {
+	color: #EDFCC5;
+}
+body {
+	padding: 30px;
+	background-color: #243119;
+	background: url('@img/shrek_screaming_photo.jpg');
+	font-family: 'Roboto', sans-serif;
+	font-size: 110%;
+	font-weight: 500;
+}
+img {
+	width: 100%;
+	height: 100%;
+}
+.header {
+	background-color: #304222;
+	padding: 7px;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+.logo__img {
+	max-width: 125px;
+	margin-left: 10px;
+	filter: drop-shadow(5px 5px 3px rgb(30, 30, 30));
+}
+.nav__list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	li {
+		float: left;
+		list-style: none;
+		margin: 3px 10px 3px 30px;
+	}
+}
+.nav__list a {
+	display: block;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	border-radius: 10pt;
+	&:hover {
+		border: none;
+		outline: none;
+		background-color: #558321;
+		transition: .3s;
+	}
+	&.nav-active {
+		box-shadow: 0 0 0px 2px #EDFCC5;
+	}
+}
+main {
+	margin-top: 80px;
+}
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+.title {
+	color: #85CB33;
+}
+h3{
+	color: #85CB33;
+}
+.link{
+	color: #048A81;
+}
+.text {
+	font-size: 100%;
+}
+.gallery-item {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.item__photo {
+	margin: 0 10px 10px 0;
+	max-width: 550px;
+	max-height: 370px;
+}
+.footer-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 40px;
+}
+@media screen and (max-width: 1200px) {
+	.container {
+		max-width: 1170px;
+	}
+}
+@media screen and (max-width: 1199px) {
+	.container {
+		max-width: 960px;
+	}
+}
+@media screen and (max-width: 991px) {
+	.container {
+		max-width: 720px;
+	}
+	body {
+		padding-top: 10px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.container {
+		max-width: 540px;
+	}
+}
+@media screen and (max-width: 575px) {
+	.container {
+		max-width: 100%;
+	}
+}
