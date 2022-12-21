@@ -5,29 +5,25 @@
     })
     <body>
         <div class="container">
-            @@include('html/header.html', {
-                "nav":{
-                    "gallery": "nav-active",
-                }
-            })
+            @@include('html/header.html', {})
 
             <main>
                 <section class="gallery">
                     <h2 class="title">Галерея</h2>
                     <div class="gallery-item">
-                        <div class="item__photo">
+                        <div class="gallery-item__photo">
                             <img src="@img/shrek_screaming_photo.jpg" alt="" class="item__photo-img">
                         </div>
 
-                        <div class="item__photo">
+                        <div class="gallery-item__photo">
                             <img src="@img/shrek_friends.jpg" alt="" class="item__photo-img">
                         </div>
 
-                        <div class="item__photo">
+                        <div class="gallery-item__photo">
                             <img src="@img/shrek_full_face.jpg" alt="" class="item__photo-img">
                         </div>
 
-                        <div class="item__photo">
+                        <div class="gallery-item__photo">
                             <img src="@img/shrek_wut.png" alt="" class="item__photo-img">
                         </div>
                     </div>

@@ -49,13 +49,13 @@ img {
   overflow: hidden;
 }
 
-.nav__list li {
+.nav__list-element {
   float: left;
   list-style: none;
   margin: 3px 10px 3px 30px;
 }
 
-.nav__list a {
+.nav__list-element.nav_btn {
   display: block;
   text-align: center;
   padding: 14px 16px;
@@ -63,7 +63,7 @@ img {
   border-radius: 10pt;
 }
 
-.nav__list a:hover {
+.nav__list-element.nav_btn:hover {
   border: none;
   outline: none;
   background-color: #558321;
@@ -72,13 +72,34 @@ img {
   transition: 0.3s;
 }
 
-.nav__list a.nav-active {
+.nav__list-element.nav_btn.active {
   -webkit-box-shadow: 0 0 0px 2px #EDFCC5;
           box-shadow: 0 0 0px 2px #EDFCC5;
 }
 
 main {
-  margin-top: 80px;
+  padding-top: 80px;
+}
+
+main .hidden {
+  display: none;
+}
+
+main input {
+  background-color: #EDFCC5;
+  color: rgb(30, 30, 30);
+}
+
+main .table {
+  padding-top: 20px;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2px;
+}
+
+main .table div {
+  background-color: #304222;
+  padding-left: 5px;
 }
 
 .container {
@@ -113,7 +134,7 @@ h3 {
           justify-content: center;
 }
 
-.item__photo {
+.gallery-item__photo {
   margin: 0 10px 10px 0;
   max-width: 550px;
   max-height: 370px;

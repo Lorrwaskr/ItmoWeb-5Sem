@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/head.html',{
+        "title": "ToDo"
+    })
+    <body>
+        <div class="container">
+            @@include('html/header.html', {})
+
+            <main>
+                <h2 class="title"> Таблица </h2>
+
+                <form name="create-table" class="create-table" action="" method="get">
+                    <div>
+                        <label for="rows">Строки: </label>
+                        <input value="3" type="number" name="rows" min="1" max="10" required>
+                    </div>
+                    <div>
+                        <label for="columns">Столбцы: </label>
+                        <input value="4" type="number" name="columns" min="1" max="10" required>
+                    </div>
+                    <div>
+                        <input type="submit" value="Ок">
+                    </div>
+                </form>
+
+                <form name="fill-table" class="fill-table hidden" action="" method="get">
+                    <div>
+                        <label for="row">Строка: </label>
+                        <input value="3" type="number" name="row" min="1" max="10" required>
+                    </div>
+                    <div>
+                        <label for="column">Столбец: </label>
+                        <input value="4" type="number" name="column" min="1" max="10" required>
+                    </div>
+                    <div>
+                        <label for="text">Значение: </label>
+                        <input value="" type="text" name="text" max="10" required>
+                    </div>
+                    <div>
+                        <input type="submit" value="Ок">
+                    </div>
+                    <div>
+                        <input type="reset" value="Удалить таблицу">
+                    </div>
+                </form>
+            </main>
+            
+            @@include('html/footer.html', {})
+        </div>
+    </body>
+</html>
